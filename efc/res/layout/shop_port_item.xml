@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/list_mid_nor"
+              android:padding="15dp"
+>
+    <TextView android:id="@+id/name"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="门店名称"
+    />
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  
+              >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="电话:"
+              
+    />
+        <TextView android:id="@+id/phone"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+    />
+        <Button android:id="@+id/callBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/phone"
+                android:gravity="right"/>
+<!--                android:text="拨打电话"-->
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  
+              >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="地址:"
+              
+    />
+        <TextView android:id="@+id/address"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+    />
+        <Button android:id="@+id/addressBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/function_near_select"
+                android:gravity="right"/>
+<!--                android:text="查看地图"-->
+    </LinearLayout>
+</LinearLayout>
+
