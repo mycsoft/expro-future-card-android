@@ -1,0 +1,28 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+{
+    "merchants":[{
+        "_id":1,
+        "short_name":"泛卡惠",
+        "full_name":"泛卡惠平台",
+        "state":1,
+        "type":1,
+        "logo_img_path":"expro_test_01/656514b0-e787-11e1-931b-6df1b05a3f94.gif",
+        "charter_num":"001",
+        "charter_img_path":"expro_test_01/68432e60-e787-11e1-931b-6df1b05a3f94.jpg",
+        "create_time":"2012-05-23T08:40:41.000Z",
+        "due_time":"2013-05-22T16:40:44.000Z",
+        "address":"胜太路68号科创中心303室",
+        "website":"www.extensivepro.com",
+        "phone":"02566013059",
+        "fax":"02558679066",
+        "self_intro":"",
+        "member_intro":"",
+        "district_code":"086-025-2211100",
+        "comment":"运营商",
+        "merchant_level_id":2
+    }]
+    }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+>
+<!--    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="25dp"
+    >-->
+    <LinearLayout 
+        style="@style/topbar"
+    >
+        <Button
+            style="@style/topbar_left"
+            android:background="@drawable/topbar_home_icon"
+            android:onClick="goBack"
+        />
+<!--        <Button 
+        
+        />-->
+<!--            android:text="设置"-->
+        
+        <TextView  
+            style="@style/topbar_text"
+            android:text="商户列表"
+        />
+        <Button 
+            style="@style/topbar_right"
+            android:background="@drawable/topbar_search_icon"
+        />
+    </LinearLayout>
+    
+    <GridView 
+        android:id="@+id/grid"
+        android:layout_width="wrap_content" 
+        android:layout_height="fill_parent" 
+        android:columnWidth="50sp"
+        android:numColumns="4"
+       />
+    
+</LinearLayout>
+
