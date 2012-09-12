@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/mainactivity_bg"
+>
+
+    <LinearLayout 
+        style="@style/topbar"
+    >
+        <Button
+            style="@style/topbar_left"
+            android:background="@drawable/topbar_back_icon"
+            android:onClick="goBack"
+        />
+<!--        <Button 
+        
+        />-->
+<!--            android:text="设置"-->
+        
+        <TextView  
+            style="@style/topbar_text"
+            android:text="用户中心"
+        />
+<!--        <Button 
+            style="@style/topbar_right"
+            android:background="@drawable/topbar_bg_icon"
+            android:text="注册"
+        />-->
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+    >
+        
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="交易列表"
+                android:background="@drawable/list_above_nor"
+                android:padding="10dp"
+                android:onClick="openBusList"
+    />
+        <Button android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:background="@drawable/list_below_nor"
+                android:padding="10dp"
+                android:onClick="doLogin"
+    />
+        
+    
+    </LinearLayout>
+</LinearLayout>
+

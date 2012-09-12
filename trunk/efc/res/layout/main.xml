@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/mainactivity_bg"
+>
+<!--    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebar_bg_nor"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="25dp"
+    >-->
+    <LinearLayout 
+        style="@style/topbar"
+    >
+        <Button
+            style="@style/topbar_left"
+            android:background="@drawable/topbar_set_icon"
+        
+        />
+<!--        <Button 
+        
+        />-->
+<!--            android:text="设置"-->
+        
+        <TextView  
+            style="@style/topbar_text"
+            android:text="泛卡惠"
+        />
+        <Button 
+            style="@style/topbar_right"
+            android:background="@drawable/topbar_search_icon"
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+        <Button 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:text="卡包"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/maincard"
+        />
+        
+        <Button 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:text="个人中心"
+            android:onClick="clickUserCenter"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/mainpersonal"
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    >
+        <Button 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:text="商户"
+            android:layout_weight="1"
+            android:onClick="clickSellerBtn"
+            android:drawableTop="@drawable/mainactivity_ic_merchant"
+        />
+        <Button 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="优惠活动"
+            android:drawableTop="@drawable/mainactivity_ic_event"
+        />
+    </LinearLayout>
+    
+</LinearLayout>
+

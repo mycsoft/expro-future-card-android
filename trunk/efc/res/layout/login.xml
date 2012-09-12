@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/mainactivity_bg"
+>
+
+    <LinearLayout 
+        style="@style/topbar"
+    >
+        <Button
+            style="@style/topbar_left"
+            android:background="@drawable/topbar_back_icon"
+            android:onClick="goBack"
+        />
+<!--        <Button 
+        
+        />-->
+<!--            android:text="设置"-->
+        
+        <TextView  
+            style="@style/topbar_text"
+            android:text="泛卡惠"
+        />
+        <Button 
+            style="@style/topbar_right"
+            android:background="@drawable/topbar_bg_icon"
+            android:text="注册"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+    >
+        <EditText android:id="@+id/login_name" 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:singleLine="true"
+                  android:hint="请输入手机号"
+                  android:phoneNumber="true"
+                  android:background="@drawable/list_above_nor"
+                  android:padding="10dp"
+    />
+        <EditText android:id="@+id/login_pw"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="请输入密码"
+                  android:password="true"
+                  android:singleLine="true"
+                  android:background="@drawable/list_below_nor"
+                  android:padding="10dp"
+    />
+        <CheckBox android:id="@+id/autosave"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="自动登录"
+              />
+        <Button 
+            android:background="@drawable/buttom_larg_button_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:onClick="doLogin"
+        
+    />
+    
+    </LinearLayout>
+</LinearLayout>
+
